@@ -1,0 +1,72 @@
+.movie_title {
+    font-size: 30px;
+    margin: 0;
+}
+
+.add {
+    text-align: right;
+    font-family: 'raleway-extrabold';
+    /* border-right: 1px solid black; */
+    vertical-align: top;
+}
+
+td.add_rating {
+    vertical-align: middle;
+}
+
+td {
+    padding-bottom: 0px;
+}
+
+td.buttons {
+    text-align: right;
+    padding-top: 30px;
+}
+
+td.back {
+    padding-top: 0;
+}
+
+td.right {
+    padding-right: 0;
+}
+
+button.back {
+    background-color: transparent;
+    /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+table.review {
+    margin: 100px 100px 0 100px;
+    vertical-align: top;
+    border-collapse: separate;
+    border-spacing: 1em;
+    padding: 0 100px;
+}
+
+textarea.review_text {
+    width: 100%;
+    resize: none;
+    border-radius: 5px 5px 5px 5px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+img.star {
+    width: 30px;
+    height: 30px;
+    display: inline-block
+}
+
+
+/* table,
+td,
+tr {
+    border: black solid 1px
+} */

@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url("http://3.0.90.7:80/tubes2wbd/Engima/public/assets/raleway-extrabold.ttf") format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("http://3.0.90.7:80/tubes2wbd/Engima/public/assets/raleway-bold.ttf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("http://3.0.90.7:80/tubes2wbd/Engima/public/assets/raleway-semibold.ttf") format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("http://3.0.90.7:80/tubes2wbd/Engima/public/assets/fonts/raleway-regular.ttf") format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url("http://3.0.90.7:80/tubes2wbd/Engima/public/assets/fonts/raleway-bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'raleway-extrabold';
+    src: url("http://3.0.90.7:80/tubes2wbd/Engima/public/assets/fonts/raleway-extrabold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'raleway-medium';
+    src: url("http://3.0.90.7:80/tubes2wbd/Engima/public/assets/fonts/raleway-medium.ttf") format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    ;
+}
+
+.center-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.06);
+    border-radius: 2%;
+}
+
+a {
+    color: #00c1ea;
+    text-decoration: none;
+}
+
+button {
+    font-size: 1.2em;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+button.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 14px 35px;
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    width: auto;
+}
+
+button.submit {
+    background-color: #00c1ea;
+}
+
+button.delete {
+    background-color: #f51c0c;
+}
+
+button.cancel {
+    background-color: #FFFFFF;
+    color: rgb(60, 60, 60);
+    border: 1px solid rgb(60, 60, 60);
+}
+
+
+/* Red */
+
+button.button4 {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+
+/* Gray */
+
+button.button5 {
+    background-color: #555555;
+}
+
+.btn-full-blue {
+    border: 0;
+    color: white;
+    background-color: #00c1ea;
+}
+
+.btn-full-grey {
+    border: 0;
+    color: white;
+    background-color: #b5b5b5;
+}
+
+.form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 9% 7%;
+    border: 0px;
+    border-radius: 50px;
+    width: 440px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 40px;
+    border-radius: 6px;
+    padding: 9px 16px;
+    width: 100%;
+}
+
+.file-browse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-browse button {
+    height: 100%;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.bolded-text {
+    display: inline;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.title_page {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Raleway';
+}

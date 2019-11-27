@@ -1,0 +1,13 @@
+.register-notice {
+    margin-top: 7%;
+}
+
+#login-message {
+    display: none;
+    margin-top : 20px;
+    color: crimson;
+}
+
+#login-btn {
+    margin-top: 25px;
+}

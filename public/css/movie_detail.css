@@ -1,0 +1,280 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.movie-detail-container {
+    width: 71rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 240px auto 35%;
+    grid-template-rows: 21rem auto auto;
+    background-color: white;
+    padding: 0 3rem;
+    min-height: 93.4%;
+}
+
+.movie-detail-container>* {
+    padding: 1rem;
+}
+
+.overview {
+    grid-area: 1/1/1/4;
+    display: grid;
+    grid-template-columns: 240px auto;
+}
+
+.overview .poster {
+    grid-area: 1/1/1/1;
+}
+
+.overview .poster img {
+    border-radius: 0.5rem;
+    max-width: 210px;
+}
+
+.overview .detail {
+    margin: auto 0;
+    grid-area: 1/2/1/3;
+}
+
+.overview .detail .title {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.overview .detail .genre {
+    display: inline-block;
+    font-weight: 600;
+    color: #06849D;
+    margin-top: 0.5rem;
+}
+
+.overview .detail .genre::after {
+    content: "  |  "
+}
+
+.overview .detail .duration {
+    display: inline-block;
+    font-weight: 600;
+    color: #06849D;
+}
+
+.overview .detail .duration::after {
+    content: " mins";
+}
+
+.overview .detail .release_date {
+    font-weight: 600;
+    color: #6E6E6E;
+    margin-top: 0.5rem;
+}
+
+.overview .detail .release_date::before {
+    content: "Released date: "
+}
+
+.overview .detail .rating {
+    font-weight: 600;
+    font-size: 24px;
+    color: #595959;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.overview .detail .rating::before {
+    background-image: url("../assets/images/star.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+}
+
+.overview .detail .rating::after {
+    font-weight: 600;
+    font-size: 16px;
+    color: #595959;
+    content: "/10";
+}
+
+.schedule {
+    grid-area: 2/1/2/3;
+    box-shadow: 0px 0px 7px 1px rgba(189, 189, 189, 1);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+}
+
+.schedule .schedule_title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.schedule .schedule_table {
+    padding: 1rem 0;
+}
+
+.schedule .schedule_table th {
+    font-weight: 600;
+    color: #595959;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+.schedule .schedule_table td {
+    font-weight: 700;
+    color: #595959;
+    padding: 0.5rem 1rem;
+}
+
+.schedule .schedule_table table tbody td {
+    border-top: 1px solid #595959;
+}
+
+.review .review_table table td {
+    border-top: 1px solid #595959;
+}
+
+.review .review_table table tr:first-child td {
+    border-top: none;
+}
+
+.row-date {
+    width: 15%;
+}
+
+.row-time {
+    width: 4%;
+}
+
+.row-seat {
+    width: 12%;
+}
+
+.row-seat::after {
+    content: " Seats";
+}
+
+.row-info {
+    width: 14%;
+    text-align: right;
+}
+
+.row-available::before {
+    content: "Book Now";
+    color: #05BFE7;
+    width: auto;
+}
+
+.row-available::after {
+    background-image: url("../assets/images/next.png");
+    background-size: 18px 18px;
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    margin-left: 0.5rem;
+}
+
+.row-not-available::before {
+    content: "Not available";
+    color: #F2050A;
+    width: auto;
+}
+
+.row-not-available::after {
+    background-image: url("../assets/images/cross.png");
+    background-size: 18px 18px;
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    margin-left: 0.5rem;
+}
+
+.review {
+    grid-area: 2/3/2/3;
+    box-shadow: 0px 0px 7px 1px rgba(189, 189, 189, 1);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+}
+
+.review .review_title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.review-component {
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: repeat(3, auto);
+    padding: 0.6rem 0;
+}
+
+.reviewer-pic {
+    grid-area: 1/1/3/1;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.reviewer-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.reviewer-name {
+    grid-area: 1/2/1/2;
+    font-weight: 600;
+    color: #6E6E6E;
+    padding-left: 0.8rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.review-rating {
+    grid-area: 2/2/2/2;
+    font-weight: 600;
+    font-size: 16px;
+    color: #595959;
+    padding-left: 0.8rem;
+}
+
+.review-rating::before {
+    background-image: url("../assets/images/star.png");
+    background-size: 15px 15px;
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+}
+
+.review-rating::after {
+    font-weight: 600;
+    font-size: 12px;
+    color: #595959;
+    content: "/10";
+}
+
+.review-content {
+    grid-area: 3/2/3/2;
+    font-size: 12px;
+    padding-left: 0.8rem;
+    overflow: hidden;
+    max-height: 200px;
+}

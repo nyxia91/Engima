@@ -1,0 +1,135 @@
+.search-container {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 17.5vw;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#movies-container {
+    width: 100%;
+}
+
+.card-container {
+    display: block;
+}
+
+.movie-card {
+    width: 100%;
+    height: 200px;
+    margin: 30px auto 30px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.poster-img-container {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    overflow: hidden;
+    border-radius: 10%;
+    max-height: 100%;
+}
+
+.poster-img {
+    width: 100%;
+}
+
+.poster-desc {
+    overflow: hidden;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.movie-ratings-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.movie-profile {
+    max-width: 70%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.line-container {
+    margin-bottom: 1px;
+}
+
+.line {
+    background-color: #7d7d7d;
+    margin: 1px;
+    display: block;
+}
+
+p {
+    margin: 0;
+}
+
+.view-details {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.movie-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.movie-rating {
+    font-size: 1.3em;
+    color: #7d7d7d;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+a.disabled {
+    color: #7d7d7d !important;
+}
+
+#control-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#control-container a, button{
+    margin: 55px 20px 0px 20px;
+}
+#button-container {
+    display: flex;
+    justify-content: center;;
+}
+
+.clickable-page {
+    text-align: center;
+    color: rgb(6, 202, 202);
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(6, 202, 202);
+}
+
+.unclickable-page {
+    text-align: center;
+    color: gray;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
